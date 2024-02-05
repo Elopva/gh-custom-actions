@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get and cache code
-        uses: ./.github/actions/cache-deps # or the repository of the action
+        uses: ./.github/actions/cache-deps
       - name: Lint code
         run: npm run lint
   test:
